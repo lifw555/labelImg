@@ -252,6 +252,8 @@ class MainWindow(QMainWindow, WindowMixin):
                 return '&YOLO', 'format_yolo'
             elif format == LabelFileFormat.CREATE_ML:
                 return '&CreateML', 'format_createml'
+            elif format == LabelFileFormat.COCO:
+                return '&COCO', 'format_coco'
 
         save_format = action(get_format_meta(self.label_file_format)[0],
                              self.change_format, 'Ctrl+Y',

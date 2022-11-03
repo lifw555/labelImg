@@ -147,6 +147,7 @@ Download and install `Anaconda <https://www.anaconda.com/download/#download>`__ 
 Open the Anaconda Prompt and go to the `labelImg <#labelimg>`__ directory
 
 .. code:: shell
+
     cd %labelimg%
     conda create -n labelImg python=3.9
     activate labelImg
