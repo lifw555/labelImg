@@ -147,9 +147,11 @@ Download and install `Anaconda <https://www.anaconda.com/download/#download>`__ 
 Open the Anaconda Prompt and go to the `labelImg <#labelimg>`__ directory
 
 .. code:: shell
-
+    cd %labelimg%
+    conda create -n labelImg python=3.9
+    activate labelImg
     conda install pyqt=5
-    conda install -c anaconda lxml
+    conda install lxml
     pyrcc5 -o libs/resources.py resources.qrc
     python labelImg.py
     python labelImg.py [IMAGE_PATH] [PRE-DEFINED CLASS FILE]
